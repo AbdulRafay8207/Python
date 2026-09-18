@@ -104,10 +104,84 @@
 
 # ============================ Function ============================
 
-def greeting(name):
-    return f"Hi {name}"
-    # print(f"Hi {name}")
+# def greeting(name):
+#     return f"Hi {name}"
+#     # print(f"Hi {name}")
 
 
-# greet = greeting("Abdul")
-print(greeting("Abdul"))
+# # greet = greeting("Abdul")
+# print(greeting("Abdul"))
+
+# ============================ List ============================
+
+# list = [3,5,1,6,1]
+# # list.append(4)
+# # list.sort(reverse=True)
+# # list.reverse()
+# # list.insert(1,2)
+# # list.remove(1) # Remove first occurence
+# # list.pop(2)
+# print(list)
+
+# ============================ Tuple ============================
+
+# tup = (1,2,3,4)
+# tup1 = (1,) # We create tup which contain single element like this, other wise python will understand it as an integer
+# tup2 = (1) # This is an integer
+# print(type(tup))
+# print(tup)
+
+# ============================ Dictionary ============================
+
+# student = {
+#     "name": "Abdul",
+#     "age" : "18",
+# }
+
+# # print(student.get("name")) # If wrong key, then it returns none instead of error
+# # print(student["name"]) # If wrong key, it will throw error.
+
+# student["city"] = "Karachi"
+# student.update({"Job": "Dev"})
+# print(student)
+
+# ============================ Dictionary ============================
+
+# collections = {1,2,3,4,4,5,5,"hello","hello", 2, 1,9}
+
+# print(type(collections))
+# print(collections)
+
+# To create an empty set:
+
+# set = {1,2,3,4,5,6}
+# set = set()
+# set.add(1)
+# set.add(2)
+# set.add(3)
+# set.add(4)
+# set.add(5)
+# # set.remove(1)
+# # set.clear()
+# set.pop() # It removes random values, but im seeing it alawys remove first value.
+# print(set)
+
+# ---- union and intersection ----
+
+# set1 = {1,2,3}
+# set2 = {2,3,4}
+# print(set1.intersection(set2))
+
+# ============================ Class ============================
+
+class Students:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+        print("hi")
+    print("ola")
+
+s1 = Students("Abdul", 20)
+s2 = Students("Rafay", 90)
+print(s1.name)
+print(s2.marks)
