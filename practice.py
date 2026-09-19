@@ -80,3 +80,19 @@
 # s1 = Student("Rafay", [12, 32, 24])
 # s1.get_avg()
 # s1.hello()
+
+posts = {
+    1: {"title": "YouTube", "description": "YouTube thumbnail"},
+    2: {"title": "Twitter", "description": "X tweet"},
+    3: {"title": "TikTok", "description": "Short video"},
+    4: {"title": "Instagram", "description": "Instagram post"},
+    5: {"title": "Facebook", "description": "Facebook update"},
+    6: {"title": "LinkedIn", "description": "Professional post"},
+    7: {"title": "Reddit", "description": "Reddit discussion"},
+    8: {"title": "Discord", "description": "Discord announcement"},
+    9: {"title": "Pinterest", "description": "Pinterest pin"},
+    10: {"title": "Blog", "description": "Blog article"},
+    11: {"title": "Newsletter", "description": "Email newsletter"},
+}
+
+print(list(posts.items()))
