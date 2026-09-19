@@ -174,14 +174,106 @@
 
 # ============================ Class ============================
 
-class Students:
-    def __init__(self, name, marks):
-        self.name = name
-        self.marks = marks
-        print("hi")
-    print("ola")
+# class Students:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
+#         print("hi")
+#     print("ola")
 
-s1 = Students("Abdul", 20)
-s2 = Students("Rafay", 90)
-print(s1.name)
-print(s2.marks)
+# s1 = Students("Abdul", 20)
+# s2 = Students("Rafay", 90)
+# print(s1.name)
+# print(s2.marks)
+
+
+# class Person:
+#     __name =  "annonymus"
+
+#     def __hello(self):
+#         print("Hello person!")
+
+#     def welcome(self):
+#         self.__hello()
+#         print("self is", self)
+
+# s1 = Person()
+# s1.welcome()
+
+# class Car:
+#     def __init__(self, type):
+#         self.type = type
+
+#     @staticmethod
+#     def start():
+#         print("Car started...")
+
+#     @staticmethod
+#     def stop():
+#         print("Car stopped...")
+
+# class Totoya(Car):
+#     def __init__(self, name, type):
+#         super().__init__(type)
+#         self.name = name
+#         super().start()
+
+# car1 = Totoya("Fortuner", "ev")
+
+# print(car1.type)
+
+# ------------ Dunder function -------------
+
+# class Complex:
+#     def __init__(self, real, img):
+#         self.real = real
+#         self.img = img
+
+#     def showNumber(self):
+#         print(self.real, "i +", self.img, "j")
+
+#     def __add__(self, num2):        # Here I change the logic of + for my class and this is called operator overloading
+#         self.real += num2.real
+#         self.img += num2.img
+#         return Complex(self.real, self.img)
+        
+
+# num1 = Complex(2, 4)
+# num1.showNumber()
+
+# num2 = Complex(3, 6)
+# num2.showNumber()
+
+# num3 = num1 + num2
+# num3.showNumber()
+
+# ============================ Unpacking ============================
+
+# a,b,c = [1,2,3]
+# print(a,b,c)
+
+# a,b,*c = [1,2,3,4,5,5,6,6,7,]
+# print(a,b,c)
+
+# name, (age, profession) = ("rafay", (18, "software developer"))
+# print(name, age, profession)
+
+# def print_name(*names):
+#     print(names)
+#     for name in names:
+#         print(name)
+
+# print_name("Abdul","rafay","ali","ahmed")
+
+# list1 = [1,2,3]
+# list2 = [4,5,6]
+# print(*list1, *list2)
+
+# dict1 = {"a": 1, "b": 2}
+# dict2 = {"c": 3, "d": 4}
+# print({**dict1, **dict2})
+
+# x = 10
+# y = 20
+# x, y = y, x
+# print(x, y)

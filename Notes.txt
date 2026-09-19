@@ -29,3 +29,8 @@ Pandas
 12. Set always contain unique values, even if we passed duplicate values, set will ignore those duplicate values.
 13. The set itself is mutable while the elements inside the set is immutable.
 14. We can use tuple inside set because it is immuable and we cant use list and dictionaries inside sets because they are mutable.
+
+Clsas
+
+15. The data which is inside class and which obviously going to be same for every instance is called class attribute, and the data which is inside construtor sent by instance is called instance attribute.
+16. Changing the logic of + for my class is called operator overloading. This is also called polymorphism
